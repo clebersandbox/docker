@@ -1,7 +1,7 @@
 #!/bin/bash
 
 docker run -d --name maria -eMARIADB_ROOT_PASSWORD=root \
--v ~/docker/volumes/mysql:/var/lib/mysql mariadb/server:10.4
+-v ~/docker/volumes/mariadb:/var/lib/mysql mariadb/server:10.4
 
 
 #docker run -it --name mysql -p 3306:3306 \
